@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BabySitter Price Calculator</string>
+    <string name="total_charge_label">Total Charge</string>
+    <string name="start_time_label">Start Time (12-hour format):</string>
+    <string name="end_time_label">End Time (12-hour format):</string>
+    <string name="bed_time_label">Bed Time (12-hour format):</string>
+    <string name="button_calculate_text">Calculate</string>
+    <string name="amount_format">\u0024%1$d</string>
+    <string name="error_title">Error</string>
+    <string name="time_error_info">"Please check time.\n 1. Start time should be no earlier than 5PM. \n 2. End Time Should be no later than 4AM. \n 3. Bed time should be between 7PM and 4AM. "</string>
+    <string name="dialog_ok">OK</string>
+    <string name="calculate_error_info">Something went wrong. Please try with valid input</string>
+</resources>

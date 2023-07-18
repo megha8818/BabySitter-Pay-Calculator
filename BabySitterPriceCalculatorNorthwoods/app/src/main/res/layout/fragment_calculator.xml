@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/totalChargeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="@string/total_charge_label"
+            android:textSize="30sp"
+            android:textAppearance="@style/CustomTextAppearance"/>
+
+        <TextView
+            android:id="@+id/totalChargeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textAppearance="@style/CustomTextAppearance"
+            tools:text="$100"/>
+
+        <TextView
+            android:id="@+id/startTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/start_time_label"
+            android:textAppearance="@style/CustomTextAppearance"
+            android:textSize="16sp"/>
+
+        <TimePicker
+            android:id="@+id/startTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/endTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_time_label"
+            android:textSize="16sp"
+            android:textAppearance="@style/CustomTextAppearance"/>
+
+        <TimePicker
+            android:id="@+id/endTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner"/>
+
+        <TextView
+            android:id="@+id/bedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/CustomTextAppearance"
+            android:text="@string/bed_time_label"
+            android:textSize="16sp"/>
+
+        <TimePicker
+            android:id="@+id/bedTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculate_button"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginBottom="40dp"
+            android:text="@string/button_calculate_text"/>
+
+    </LinearLayout>
+</ScrollView>
